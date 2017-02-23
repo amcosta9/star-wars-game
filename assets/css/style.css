@@ -1,6 +1,11 @@
+.panel {
+    width: 150px;
+    display: inline-block;
+    list-style: none;
+}
+
 img {
-    /*width: 100px;*/
-    height: 150px;
+    width: 100px;
 }
 
 body {
