@@ -50,7 +50,7 @@ $(document).ready(function() {
                     console.log("enemies are: " + enemies);
                     pickDefender = true;
                     console.log("pickDef " + pickDefender);
-                    pickDef();
+                    // pickDef();
                 }))
             if ($("#palpatine-d").click(function () {
                    $("#palpatine-d").appendTo("#yourCharacter-d").css({"background-color": "green"});
@@ -64,7 +64,7 @@ $(document).ready(function() {
                    enemies.push("dvader", "chew", "luke");
                    console.log("enemies are: " + enemies);
                    pickDefender = true;
-                   pickDef();
+                   // pickDef();
             }))
             if ($("#chewbacca-d").click(function () {
                    $("#chewbacca-d").appendTo("#yourCharacter-d").css({"background-color": "green"});
@@ -78,7 +78,7 @@ $(document).ready(function() {
                    enemies.push("palp", "dvader", "luke");
                    console.log("enemies are: " + enemies);
                    pickDefender = true;
-                   pickDef();
+                   // pickDef();
             }))
             if ($("#luke-d").click(function () {
                    $("#luke-d").appendTo("#yourCharacter-d").css({"background-color": "green"});
@@ -92,39 +92,61 @@ $(document).ready(function() {
                    enemies.push("palp", "chew", "dvader");
                    console.log("enemies are: " + enemies);
                    pickDefender = true;
-                   pickDef();
+                   // pickDef();
+            }));
+        } else if (pickDefender) {
+            if ($("#darthVader-d").click(function () {
+            $("#darthVader-d").appendTo("#defender-d").css({"background-color": "black"});
+            defender = "dvader";
+            console.log("defender: " + defender);
+        }));
+        if ($("#palpatine-d").click(function () {
+                $("#palpatine-d").appendTo("#defender-d").css({"background-color": "black"});
+                defender = "palpatine";
+                console.log("defender: " + defender);
+            }));
+        if ($("#chewbacca-d").click(function () {
+                $("#chewbacca-d").appendTo("#defender-d").css({"background-color": "black"});
+                defender = "chew";
+                console.log("defender: " + defender);
+            }));
+        if ($("#luke-d").click(function () {
+                $("#luke-d").appendTo("#defender-d").css({"background-color": "black"});
+                defender = "luke";
+                console.log("defender: " + defender);
             }));
         };
 
     };
 
     //characters clicked in enemies div selected to battle
-    function pickDef() {
-        if (pickDefender) {
-            if ($("#darthVader-d").click(function () {
-                $("#darthVader-d").appendTo("#defender-d");
-                defender = "dvader";
-                console.log("defender: " + defender);
-                }));
-            if ($("#palpatine-d").click(function () {
-                    $("#palpatine-d").appendTo("#defender-d");
-                    defender = "palpatine";
-                    console.log("defender: " + defender);
-                }));
-            if ($("#chewbacca-d").click(function () {
-                    $("#chewbacca-d").appendTo("#defender-d");
-                    defender = "chew";
-                    console.log("defender: " + defender);
-                }));
-            if ($("#luke-d").click(function () {
-                    $("#luke-d").appendTo("#defender-d");
-                    defender = "luke";
-                    console.log("defender: " + defender);
-                }));
-        };
-    }
+    // function pickDef() {
+    //     if (pickDefender) {
+    //         if ($("#darthVader-d").click(function () {
+    //             $("#darthVader-d").appendTo("#defender-d").css({"background-color": "black"});
+    //             defender = "dvader";
+    //             console.log("defender: " + defender);
+    //             }));
+    //         if ($("#palpatine-d").click(function () {
+    //                 $("#palpatine-d").appendTo("#defender-d").css({"background-color": "black"});
+    //                 defender = "palpatine";
+    //                 console.log("defender: " + defender);
+    //             }));
+    //         if ($("#chewbacca-d").click(function () {
+    //                 $("#chewbacca-d").appendTo("#defender-d").css({"background-color": "black"});
+    //                 defender = "chew";
+    //                 console.log("defender: " + defender);
+    //             }));
+    //         if ($("#luke-d").click(function () {
+    //                 $("#luke-d").appendTo("#defender-d").css({"background-color": "black"});
+    //                 defender = "luke";
+    //                 console.log("defender: " + defender);
+    //             }));
+    //     };
+    // }
 
     pickChar();
+    // pickDef();
 
 
 
