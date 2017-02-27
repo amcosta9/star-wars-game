@@ -24,6 +24,15 @@ button {
     color: #1d1d1d;
 }
 
-/*.panel .panel-heading .panel-footer {*/
-    /*background: transparent;*/
-/*}*/
+#foot {
+    border-top: 1px solid white;
+}
+.copyright {
+    font-size: 0.75em;
+    color: white;
+    text-align: center;
+}
+.footer {
+    background: transparent;
+    border: none;
+}
