@@ -2,6 +2,7 @@
     width: 150px;
     display: inline-block;
     list-style: none;
+    color: #1d1d1d;
 }
 
 img {
@@ -11,11 +12,16 @@ img {
 body {
     background: url(../images/background1.jpg) no-repeat fixed;
     background-size: 100% 100%;
+    color: white;
 }
 
 li {
     display: inline-block;
     list-style: none;
+}
+
+button {
+    color: #1d1d1d;
 }
 
 /*.panel .panel-heading .panel-footer {*/
